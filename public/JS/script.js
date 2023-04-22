@@ -25,7 +25,7 @@ const submitForm = () => {
     addDuck(formData);
 }
 
-// sending request to '/api/ducks'
+// sending request to server
 const getDucks = () => {
     $.get('/api/ducks',(response) => {
         if(response.statusCode === 200){
@@ -34,11 +34,12 @@ const getDucks = () => {
     });
 }
 
+// post request to the server
 const addDuck = (duck) => {
     $.ajax({
         url: 'api/ducks',
-        type: 'POST',
         data: duck,
+        type: 'POST',
         success: (result) => {
             alert(result.message);
             location.reload();
@@ -48,11 +49,11 @@ const addDuck = (duck) => {
 
 $(document).ready(function () {
     $('.materialboxed').materialbox();
+    $('.modal').modal();
+
+    getDucks();
+
     $('#formSubmit').click(() => {
         submitForm();
     });
-
-    getDucks();
-    
-    $('.modal').modal()
 });

@@ -1,29 +1,21 @@
 {
-  "name": "sit725-2023-t1-prac4",
+  "name": "sit725-2023-t1-prac5",
   "version": "1.0.0",
-  "description": "sit 725 week 4 prac",
+  "description": "sit 725 week 5 prac",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChoudharyNavit22/sit725-2021-t2-prac4.git"
-  },
-  "keywords": [
-    "Nodejs",
-    "Express",
-    "Materialize",
-    "HTML",
-    "JS",
-    "CSS"
-  ],
-  "author": "Navit Choudhary",
-  "license": "MIT",
+    "url": "git+https://github.com/stephenliu8964/sit725-2023-t1-prac5.git"
+  },  
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ChoudharyNavit22/sit725-2021-t2-prac4/issues"
+    "url": "https://github.com/stephenliu8964/sit725-2023-t1-prac5/issues"
   },
-  "homepage": "https://github.com/ChoudharyNavit22/sit725-2021-t2-prac4#readme",
+  "homepage": "https://github.com/ChoudharyNavit22/sit725-2021-t2-prac5#readme",
   "dependencies": {
     "express": "^4.17.1",
     "mongodb": "^4.4.1",
