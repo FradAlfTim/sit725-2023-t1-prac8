@@ -6,7 +6,7 @@ let router = express.Router();
 let controller = require('../controller/controller');
 
 router.post('/api/ducks', (req, res) => {
-    controller.createDuck();
+    controller.createDuck(req, res);
 });
 
 router.get('/api/ducks', (req, res) => {
