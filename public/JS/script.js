@@ -13,7 +13,7 @@ const addCards = (items) => {
     });
 }
 
-// get form data from web and add data to db
+// when the 'formSubmit' bottom clicked, get form data from web and invoke addDuck()
 const submitForm = () => {
     let formData = {};
     formData.title = $('#title').val();
@@ -25,7 +25,8 @@ const submitForm = () => {
     addDuck(formData);
 }
 
-// sending request to server
+/* sends a GET request to the /api/ducks endpoint using the jQuery $.get() method. When the server responds with a 200 OK status code 
+and a JSON object containing an array of duck objects, the addCards(items) function is called with the array of ducks as its argument. */
 const getDucks = () => {
     $.get('/api/ducks',(response) => {
         if(response.statusCode === 200){
@@ -34,7 +35,7 @@ const getDucks = () => {
     });
 }
 
-// post request to the server
+// post request to server.router.post('/api/ducks', 
 const addDuck = (duck) => {
     $.ajax({
         url: 'api/ducks',
