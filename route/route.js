@@ -13,4 +13,8 @@ router.get('/api/ducks', (req, res) => {
     controller.getAllDucks(req, res);
 });
 
+router.delete('/api/ducks', (req, res) => {
+    controller.deleteDuck(req, res);
+});
+
 module.exports = router;

@@ -25,4 +25,15 @@ const getAllDucks = (req, res) => {
     });
 }
 
-module.exports = {createDuck, getAllDucks}
+const deleteDuck = (req, res) => {
+    let duck = req.body;
+    model.remove(duck, (err, result) => {
+        if (!err) {
+            res.json({statusCode: 200, data: result, message: 'Deleted'});
+        } else {
+            console.error(err);
+            res.json({statusCode: 400, data: err, message: 'Delete Failed'});
+        }
+    });
+}
+module.exports = {createDuck, getAllDucks, deleteDuck}
