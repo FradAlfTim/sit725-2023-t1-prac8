@@ -1,7 +1,7 @@
 {
-  "name": "sit725-2023-t1-prac6",
+  "name": "sit725-2023-t1-prac7",
   "version": "1.0.0",
-  "description": "sit 725 week 6 prac",
+  "description": "sit 725 week 7 prac",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,20 +9,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stephenliu8964/sit725-2023-t1-prac6.git"
+    "url": "git+https://github.com/stephenliu8964/sit725-2023-t1-prac7.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stephenliu8964/sit725-2023-t1-prac6/issues"
+    "url": "https://github.com/stephenliu8964/sit725-2023-t1-prac7/issues"
   },
-  "homepage": "https://github.com/ChoudharyNavit22/sit725-2021-t2-prac6#readme",
+  "homepage": "https://github.com/ChoudharyNavit22/sit725-2021-t2-prac7#readme",
   "dependencies": {
     "chai": "^4.3.7",
     "express": "^4.17.1",
+    "http": "^0.0.1-security",
     "mocha": "^10.2.0",
     "mongodb": "^4.4.1",
     "nodemon": "^2.0.22",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "socket.io": "^4.6.1"
   }
 }

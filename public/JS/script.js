@@ -48,6 +48,11 @@ const addDuck = (duck) => {
     });
 }
 
+let socket = io();
+socket.on('number', (message) => {
+    console.log('received from server: ' + message);
+});
+
 $(document).ready(function () {
     $('.materialboxed').materialbox();
     $('.modal').modal();
